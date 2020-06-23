@@ -1,0 +1,24 @@
+{
+  "name": "babel-bs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app-compiled.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "build": "babel src -d lib",
+    "babel": "babel app.js --watch --out-file app-compiled.js"
+  },
+  "keywords": [],
+  "author": "Bruno Staub <bruno.staub@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.10.3",
+    "@babel/core": "^7.10.3",
+    "@babel/preset-env": "^7.10.3"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.10.1"
+  }
+}
